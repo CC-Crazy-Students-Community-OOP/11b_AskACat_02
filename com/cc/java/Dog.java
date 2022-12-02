@@ -8,7 +8,7 @@ public class Dog extends Pet {
 	 * @param name
 	 * 
 	 */
-	public Dog(String name) {
+	public Dog( String name ) {
 		this.name = name;
 	}
 
@@ -21,12 +21,12 @@ public class Dog extends Pet {
 	
 	// Frag irgendeine Katze --> Namen
 	public String askACatItsName() {
-		return Controller.getSomeRandomFelidae().getName(this);
+		return Controller.getSomeRandomFelidae().getName( this );
 	}
 
 	@Override
 	public String petSounds() {
-		return name + ": Bark!";	
+		return name + ": Bark!";
 	}
 	
 	

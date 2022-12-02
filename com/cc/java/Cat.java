@@ -9,14 +9,14 @@ public class Cat extends SuperCat{
 	 * @param name
 	 * 
 	 */
-	public Cat(String name, String ageStr) {
-		super(name);
+	public Cat( String name, String ageStr ) {
+		super( name );
 		this.ageStr = ageStr;
 	}
 	
-	public String tellYourAge(SuperCat felidae) {
-		if (felidae instanceof Cat) {
-			if (felidae.name != this.name) {
+	public String tellYourAge( SuperCat felidae ) {
+		if ( felidae instanceof Cat ) {
+			if ( felidae.name != this.name ) {
 				return this.name + " says: Because you're also a cat, " + felidae.name + " - I'm " + this.ageStr +".";
 			} else {
 				return "Yes, sometimes you don't know how old you are, " + this.name + ", you are " + this.ageStr +".";
@@ -30,7 +30,7 @@ public class Cat extends SuperCat{
 		
 		this.level++;
 		
-		switch (this.level) {
+		switch ( this.level ) {
 		case 1:
 			return "This is an inappropriate question!";
 		case 2:
