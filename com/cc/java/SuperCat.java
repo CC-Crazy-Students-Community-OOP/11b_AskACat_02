@@ -28,8 +28,7 @@ public class SuperCat extends Pet{
 	// Frag irgendeine Katze --> Name
 	// ( Dog ) pet | ( SuperCat ) pet :: Downcasting
 	public String getName( Pet pet ) {
-		if ( pet instanceof Dog ) 
-		{	
+		if ( pet instanceof Dog ) {	
 			return "Sorry " + ( ( Dog ) pet ).getName() + ", you're not a cat!";
 		}
 		else {
